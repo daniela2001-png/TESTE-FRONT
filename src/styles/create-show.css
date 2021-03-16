@@ -1,0 +1,143 @@
+
+
+body{
+    margin: 0px;
+}
+
+.all {
+    /* position: fixed; */
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(196, 196, 196);
+}
+
+.content {
+    width: 98%;
+    max-width: 800px;
+    font-family: sans-serif;
+}
+
+.steps {
+    display: flex;
+    background-color: #eee;
+    width: 100%;
+    max-width: 275px;
+}
+
+.steps h4{
+    margin: 0px;
+    padding: 15px 20px;
+}
+
+.step-current{
+    background-color: white;
+    box-shadow: 4px -4px 8px rgba(0, 0, 0,0.3);
+}
+
+form {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.4);
+    background-color: white;
+
+}
+
+form h2{
+    margin: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  center;
+    padding: 15px;
+    max-height: 440px;
+    overflow-y: auto;
+
+}
+
+.div-inputs {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 15px;
+}
+
+b{
+    color: red;
+}
+
+.inputs {
+    width: 100%;
+    max-width: 250px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.upload-img {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.upload-img + label {
+    height: 20px;
+    width: 100%;
+    max-width: 250px;
+    padding: 12px 20px;
+    font-size: 1.25em;
+    font-weight: 700;
+    background-color:  #659eb3;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.upload-img:focus + label,
+.upload-img + label:hover {
+    background-color: #0296c7;
+    color: white;
+}
+
+.upload-img:focus + label {
+	background-color: #045a77;
+} 
+
+.btn-next-step input{
+    background-color: #57b15d;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.btn-next-step input:hover{
+    background-color: #02ce0f;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn-next-step h3 {
+    margin: 0px;
+}
+
+.label-file {
+    text-align: center;
+}

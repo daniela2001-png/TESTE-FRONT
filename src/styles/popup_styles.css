@@ -1,0 +1,157 @@
+.showscontainer {
+  background-color: #eee;
+  letter-spacing: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container-all {
+  visibility: hidden;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 600ms;
+}
+.container-all:target{
+  background: rgba(0, 0, 0, 0.7);
+  visibility: visible;
+  opacity: 1;
+}
+
+.container-all:target .popup{
+  top: 50%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%, -50%);
+  visibility: visible;
+}
+
+.popup {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  background-color: white;
+  top: -200%;
+  left: -200%;
+  transform: rotate(90deg) translate(150%, 230%);
+  transition: all 600ms;
+}
+.cardvisible {
+  width: 250px;
+  margin: 0px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 9px;
+  box-shadow: 4px 2px 8px rgba(0,0,0,.4);
+  overflow: hidden;
+  transition: 250ms;
+}
+
+.cardvisible:hover {
+  transform: translate(0px, -3px);
+  transition: 250ms;
+  box-shadow: 7px 4px 10px rgba(0,0,0,.4);
+}
+
+.cardvisible img{
+  width: 100%;
+}
+
+.showswrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container p-4 {
+  margin: 0px;
+}
+.hiddenimg {
+  width: 40%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.hiddenimg img {
+  width: 100%;
+}
+.container-text{
+  width: 60%;
+  padding: 0px;
+  overflow-y: auto;
+  
+}
+
+.container-text h4 {
+  background-color: #f7ec25;
+  padding: 9px 0px;
+  font-weight: bold;
+} 
+.popup-show-cont {
+  padding: 20px;
+}
+.description-date {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  width: 60%;
+  text-align: justify;
+}
+
+.date-hour {
+  width:40%;
+}
+
+.precio {
+  background-color: black;
+  color: white;
+  padding: 9px 0px;
+}
+.btn-close-popup{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  line-height: 10px;
+  padding: 20px;
+} 
+
+.button-opn-popup {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 7px 13px;
+  transition: 250ms;
+  font-size: 15px;
+  font-weight: 800;
+}
+.button-opn-popup:hover{ 
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  transition: 250ms;
+}
+.btn-close-popup:hover{ 
+  color: white;
+  text-decoration: none;
+}
+
+.showinfo {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.showinfo h3 {
+  font-size: 15px;
+}

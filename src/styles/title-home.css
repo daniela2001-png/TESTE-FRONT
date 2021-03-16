@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.daniela_title {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_daniela {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img_daniela img {
+    height: 300px;
+    width: auto;
+}
+
+.container_daniela {
+    display: flex;
+    width: 75%;
+    overflow: hidden;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15), 0 10px 0 -5px #eee,
+                0 20px 0 -10px #eee;
+}
+
+blockquote:before { content: open-quote; }
+blockquote:after  { content: close-quote; }
